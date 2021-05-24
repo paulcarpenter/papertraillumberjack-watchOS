@@ -8,9 +8,10 @@ A CocoaLumberjack logger to post log messages to papertrailapp.com.
   s.homepage         = "http://bitbucket.org/rmonkey/papertraillumberjack"
   s.license          = 'MIT'
   s.author           = { "George Malayil Philip" => "george.malayil@roguemonkey.in" }
-  s.source = { :git => "https://bitbucket.org/rmonkey/papertraillumberjack.git" , :tag => s.version.to_s }
+  s.source = { :git => "https://bitbucket.org/paulcarpenter/papertraillumberjack-watchOS.git" , :tag => s.version.to_s }
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
+  s.watchos.deployment_target = '6.0'
   s.osx.deployment_target = '10.10'
   s.default_subspec = 'Default'
   s.swift_version = '4.2'
@@ -32,6 +33,7 @@ A CocoaLumberjack logger to post log messages to papertrailapp.com.
 
   s.subspec 'Swift' do |ss|
     ss.ios.deployment_target = '8.0'
+    ss.watchos.deployment_target = '6.0'
     ss.osx.deployment_target = '10.10'
     ss.dependency 'PaperTrailLumberjack/Core'
     ss.dependency 'CocoaLumberjack/Swift', '~> 3.4'
